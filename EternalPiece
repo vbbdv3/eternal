@@ -100,3 +100,8 @@ game:GetService("ReplicatedStorage").Remotes.Dialogue:FireServer(unpack(args))
 wait(0.1)
 end
 end)
+
+local main = libary:CreateWindow("TRASH")
+
+local mod = main:Button("If you do not have this level, you will be banned!!!", function()
+end)
