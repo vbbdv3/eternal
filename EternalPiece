@@ -1,9 +1,9 @@
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("TRASH")
 
-local mod = main:Button("50+ LVL", function()
-_G.egg_enabled = not _G.egg_enabled
-while _G.egg_enabled do
+local mod = main:Button("Swing", function()
+_G.Swing_enabled = not _G.Swing_enabled
+while _G.Swing_enabled do
 local args = {
     [1] = "Swing",
     [2] = "Execute",
