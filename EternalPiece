@@ -45,32 +45,6 @@ wait(1)
 end
 end)
 
-local mod = main:Button("ThirdAbility", function()
-_G.ThirdAbility_enabled = not _G.ThirdAbility_enabled
-while _G.ThirdAbility_enabled do
-local args = {
-    [1] = "Execute",
-    [2] = {
-        ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-336.30279541015625, 329.33575439453125, -2543.03564453125)
-    }
-}
-
-game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
-
-wait(1)
-local args = {
-    [1] = "Terminate",
-    [2] = {
-        ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-336.30279541015625, 329.33575439453125, -2543.03564453125)
-    }
-}
-game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
-wait(1)
-end
-end)
-
 local mod = main:Button("50 LVL TP", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(711.87353515625, 394.5188293457031, 551.441650390625)
 end)
