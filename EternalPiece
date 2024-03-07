@@ -26,17 +26,17 @@ local args = {
     [1] = workspace.World.Items.Egg
 }
 game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
-wait(0.1)
+wait(0.5)
 local args = {
     [1] = workspace.World.Items.Egg
 }
 game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
-wait(0.1)
+wait(0.5)
 local args = {
     [1] = workspace.World.Items.Egg
 }
 game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
-wait(0.1)
+wait(0.5)
 local args = {
     [1] = {
         ["Function"] = "StartQuest",
@@ -53,10 +53,8 @@ local args = {
         ["QuestGiver"] = "Egg Collector"
     }
 }
-
 game:GetService("ReplicatedStorage").Remotes.Dialogue:FireServer(unpack(args))
-
-wait(0.1)
+wait(0.5)
 end
 end)
 
