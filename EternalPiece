@@ -71,7 +71,7 @@ end)
 
 local mod = main:Button("TA3", function()
 _G.ThirdAbility3_enabled = not _G.ThirdAbility3_enabled
-while _G.ThirdAbility2_enabled do
+while _G.ThirdAbility3_enabled do
 local args = {
     [1] = "Execute",
     [2] = {
