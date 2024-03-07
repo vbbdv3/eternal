@@ -1,6 +1,10 @@
 local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
 local main = libary:CreateWindow("TRASH")
 
+local mod = main:Button("Anchored", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+end)
+
 local mod = main:Button("Swing", function()
 _G.Swing_enabled = not _G.Swing_enabled
 while _G.Swing_enabled do
@@ -17,11 +21,63 @@ wait(0.1)
 end
 end)
 
+local mod = main:Button("ThirdAbility", function()
+_G.ThirdAbility_enabled = not _G.ThirdAbility_enabled
+while _G.ThirdAbility_enabled do
+local args = {
+    [1] = "Execute",
+    [2] = {
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-366.0675048828125, 334.04327392578125, -2511.049560546875)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = "Terminate",
+    [2] = {
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-365.70391845703125, 334.07916259765625, -2511.192138671875)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("ThirdAbility", function()
+_G.ThirdAbility_enabled = not _G.ThirdAbility_enabled
+while _G.ThirdAbility_enabled do
+local args = {
+    [1] = "Execute",
+    [2] = {
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-336.30279541015625, 329.33575439453125, -2543.03564453125)
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "Terminate",
+    [2] = {
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-336.30279541015625, 329.33575439453125, -2543.03564453125)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("50 LVL TP", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(711.87353515625, 394.5188293457031, 551.441650390625)
+end)
+
 local mod = main:Button("50+ LVL", function()
 _G.egg_enabled = not _G.egg_enabled
 while _G.egg_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(711.87353515625, 394.5188293457031, 551.441650390625)
-wait(0.1)
 local args = {
     [1] = workspace.World.Items.Egg
 }
@@ -58,11 +114,13 @@ wait(0.5)
 end
 end)
 
+local mod = main:Button("300 LVL TP", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-358.4593505859375, 332.335693359375, -2494.05029296875)
+end)
+
 local mod = main:Button("300+ LVL", function()
 _G.Serve_enabled = not _G.Serve_enabled
 while _G.Serve_enabled do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-358.4593505859375, 332.335693359375, -2494.05029296875)
-wait(0.1)
 local args = {
     [1] = workspace.World.Items.Table
 }
