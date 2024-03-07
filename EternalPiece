@@ -4,6 +4,8 @@ local main = libary:CreateWindow("TRASH")
 local mod = main:Button("300 LVL", function()
 _G.Autoclick_enabled = not _G.Autoclick_enabled
 while _G.Autoclick_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-358.4593505859375, 332.335693359375, -2494.05029296875)
+wait(0.1)
 local args = {
     [1] = workspace.World.Items.Table
 }
