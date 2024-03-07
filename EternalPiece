@@ -27,8 +27,8 @@ while _G.ThirdAbility1_enabled do
 local args = {
     [1] = "Execute",
     [2] = {
-        ["Index"] = "FirstAbility",
-        ["MousePosition"] = Vector3.new(-412.5544128417969, 329.85601806640625, -2512.0869140625)
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-408.3262023925781, 329.33575439453125, -2505.642822265625)
     }
 }
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
@@ -36,8 +36,8 @@ wait(1)
 local args = {
     [1] = "Terminate",
     [2] = {
-        ["Index"] = "FirstAbility",
-        ["MousePosition"] = Vector3.new(-412.5539855957031, 329.85504150390625, -2512.087646484375)
+        ["Index"] = "ThirdAbility",
+        ["MousePosition"] = Vector3.new(-408.3262023925781, 329.33575439453125, -2505.642822265625)
     }
 }
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
@@ -45,29 +45,6 @@ wait(1)
 end
 end)
 
-local mod = main:Button("TA2", function()
-_G.ThirdAbility2_enabled = not _G.ThirdAbility2_enabled
-while _G.ThirdAbility2_enabled do
-local args = {
-    [1] = "Execute",
-    [2] = {
-        ["Index"] = "FirstAbility",
-        ["MousePosition"] = Vector3.new(-400.4036865234375, 333.05810546875, -2554.1328125)
-    }
-}
-game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
-wait(1)
-local args = {
-    [1] = "Terminate",
-    [2] = {
-        ["Index"] = "FirstAbility",
-        ["MousePosition"] = Vector3.new(-400.4036865234375, 333.05810546875, -2554.1328125)
-    }
-}
-game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
-wait(1)
-end
-end)
 
 local mod = main:Button("SZ TP", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1138.2620849609375, 352.0361022949219, -283.0151672363281)
