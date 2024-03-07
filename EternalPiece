@@ -4,6 +4,8 @@ local main = libary:CreateWindow("TRASH")
 local mod = main:Button("50+ LVL", function()
 _G.egg_enabled = not _G.egg_enabled
 while _G.egg_enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(711.87353515625, 394.5188293457031, 551.441650390625)
+wait(0.1)
 local args = {
     [1] = workspace.World.Items.Egg
 }
