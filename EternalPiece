@@ -21,14 +21,14 @@ wait(0.1)
 end
 end)
 
-local mod = main:Button("ThirdAbility", function()
-_G.ThirdAbility_enabled = not _G.ThirdAbility_enabled
-while _G.ThirdAbility_enabled do
+local mod = main:Button("TA1", function()
+_G.ThirdAbility1_enabled = not _G.ThirdAbility1_enabled
+while _G.ThirdAbility1_enabled do
 local args = {
     [1] = "Execute",
     [2] = {
-        ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-378.2892761230469, 330.5852966308594, -2563.764892578125)
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-412.5544128417969, 329.85601806640625, -2512.0869140625)
     }
 }
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
@@ -36,15 +36,41 @@ wait(1)
 local args = {
     [1] = "Terminate",
     [2] = {
-        ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-378.25982666015625, 330.5567626953125, -2563.707275390625)
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-412.5539855957031, 329.85504150390625, -2512.087646484375)
     }
 }
-
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
-
 wait(1)
 end
+end)
+
+local mod = main:Button("TA2", function()
+_G.ThirdAbility2_enabled = not _G.ThirdAbility2_enabled
+while _G.ThirdAbility2_enabled do
+local args = {
+    [1] = "Execute",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-400.4036865234375, 333.05810546875, -2554.1328125)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = "Terminate",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-400.4036865234375, 333.05810546875, -2554.1328125)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("SZ TP", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1138.2620849609375, 352.0361022949219, -283.0151672363281)
 end)
 
 local mod = main:Button("50 LVL TP", function()
