@@ -28,7 +28,7 @@ local args = {
     [1] = "Execute",
     [2] = {
         ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-366.0675048828125, 334.04327392578125, -2511.049560546875)
+        ["MousePosition"] = Vector3.new(-378.2892761230469, 330.5852966308594, -2563.764892578125)
     }
 }
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
@@ -37,10 +37,12 @@ local args = {
     [1] = "Terminate",
     [2] = {
         ["Index"] = "ThirdAbility",
-        ["MousePosition"] = Vector3.new(-365.70391845703125, 334.07916259765625, -2511.192138671875)
+        ["MousePosition"] = Vector3.new(-378.25982666015625, 330.5567626953125, -2563.707275390625)
     }
 }
+
 game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+
 wait(1)
 end
 end)
