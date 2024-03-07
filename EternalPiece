@@ -10,6 +10,51 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
 wait(0.1)
 local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
     [1] = {
         ["Function"] = "StartQuest",
         ["QuestInfo"] = {
