@@ -1,0 +1,32 @@
+local libary = loadstring(game:HttpGet("https://pastebin.com/raw/RvJ0qewm", true))()
+local main = libary:CreateWindow("TRASH")
+
+local mod = main:Button("300 LVL", function()
+_G.Autoclick_enabled = not _G.Autoclick_enabled
+while _G.Autoclick_enabled do
+local args = {
+    [1] = workspace.World.Items.Table
+}
+game:GetService("ReplicatedStorage").Remotes.ItemInteraction:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = {
+        ["Function"] = "StartQuest",
+        ["QuestInfo"] = {
+            ["EnemyName"] = "Table",
+            ["Amount"] = 5,
+            ["QuestName"] = "Serve 5 tables",
+            ["Reward"] = {
+                ["Money"] = 10000,
+                ["Experience"] = 3000000
+            },
+            ["QuestType"] = "Server"
+        },
+        ["QuestGiver"] = "Waitress"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Dialogue:FireServer(unpack(args))
+wait(0.1)
+end
+end)
