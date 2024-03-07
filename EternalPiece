@@ -45,6 +45,53 @@ wait(1)
 end
 end)
 
+local mod = main:Button("TA2", function()
+_G.ThirdAbility2_enabled = not _G.ThirdAbility2_enabled
+while _G.ThirdAbility2_enabled do
+local args = {
+    [1] = "Execute",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-328.67022705078125, 330.3716125488281, -2532.77587890625)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = "Terminate",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-328.66973876953125, 330.3714294433594, -2532.77685546875)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+end
+end)
+
+local mod = main:Button("TA3", function()
+_G.ThirdAbility3_enabled = not _G.ThirdAbility3_enabled
+while _G.ThirdAbility2_enabled do
+local args = {
+    [1] = "Execute",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-412.2244873046875, 329.7389221191406, -2513.398193359375)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = "Terminate",
+    [2] = {
+        ["Index"] = "FirstAbility",
+        ["MousePosition"] = Vector3.new(-412.22442626953125, 329.7389221191406, -2513.3984375)
+    }
+}
+game:GetService("ReplicatedStorage").Remotes.CastAbility:FireServer(unpack(args))
+wait(1)
+end
+end)
 
 local mod = main:Button("SZ TP", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1138.2620849609375, 352.0361022949219, -283.0151672363281)
